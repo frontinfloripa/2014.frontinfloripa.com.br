@@ -1,3 +1,88 @@
+*
+  transition: all 0.2s ease
+
+html, body
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
 body
-  background: #ccc
-  font-family: 'Arial', helvetica, sans-serif
+  background: url('../img/bg-body.jpg')
+  background-size: cover
+  font-family: 'Open Sans', Arial, helvetica, sans-serif
+  font-size: 62.5%
+  @media phone
+    background-position: center
+
+/*
+  Section: Logo and Description
+*/
+
+main
+  container()
+
+.logo
+  background: url('../img/logo.png') no-repeat
+  background-size: 100% 100%
+  width: 13em
+  height: @width
+  margin: 4em auto
+  text-indent: -9999px
+  @media phone
+    width: @width - 5
+    height: @width
+    margin: 2em auto
+
+.description
+  text-align: center
+
+.description-item
+  display: inline-block
+  padding: .1em 0
+  font-weight: 300
+  font-size: 2em
+  text-transform: uppercase
+  color: #fff
+  text-shadow: 0 0 10px rgba(#000, .5)
+  border-top: 1px solid rgba(#fff, .2)
+  border-bottom: @border-top
+  @media phone
+    font-size: @font-size - .4
+
+.description-value.location
+  @media phone
+    display: block
+
+.description-divisor:nth-child(4)
+  @media phone
+    display: none
+
+/*
+  Section: Buy Ticket and View Past
+*/
+
+.buy-ticket-area, .view-past-area
+  text-align: center
+  padding: 3em 0
+
+.buy-ticket
+  display: inline-block
+  padding: .6em 2em
+  border-radius: 10em
+  background: darken(#64f18f, 10%)
+  color: #555
+  text-decoration: none
+  font-weight: 800
+  font-size: 1.8em
+  text-transform: uppercase
+  &:hover
+    background: darken(@background, 6%)
+
+.view-past-link
+  display: inline-block
+  color: #aaa
+  text-decoration: none
+  font-weight: normal
+  font-size: 1.2em
+  &:hover
+    border-bottom: 1px solid @color

@@ -100,21 +100,3 @@ offset(offset = 1)
 // ============================
 .{sgs-config-class-container}
   container()
-
-for index in (1..sgs-config-columns)
-  .{sgs-config-class-column}{index}
-    column(index)
-    if index == 6
-      @media tablet
-        column(12)
-    if index == 3
-      @media tablet
-        column(6)
-    if index == 2
-      @media tablet
-        column(4)
-    if index == 1
-      @media tablet
-        column(2)
-    @media phone
-      column(12)
