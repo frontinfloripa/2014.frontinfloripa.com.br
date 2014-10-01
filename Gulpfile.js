@@ -2,6 +2,8 @@
 var gulp    = require('gulp'),
     connect = require('gulp-connect'),
     stylus  = require('gulp-stylus'),
+    ghpages = require('gh-pages'),
+    path    = require('path'),
     plumber = require('gulp-plumber');
 
 var paths = {
@@ -33,6 +35,14 @@ gulp.task('stylus', function () {
         }))
         .pipe(gulp.dest('./assets/css'))
         .pipe(connect.reload());
+});
+
+// Deploy to 
+gulp.task('deploy', function () {
+    ghpages.publish(path.join(__dirname, '/'), {
+        add:     true,
+        message: 'Deploy website'
+    });
 });
 
 // Watch task
