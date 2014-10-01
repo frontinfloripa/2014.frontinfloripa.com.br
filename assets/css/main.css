@@ -226,6 +226,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   font-family: 'Open Sans', Arial, helvetica, sans-serif;
   font-size: 62.5%;
 }
@@ -240,6 +241,17 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 0 1em;
+  margin-bottom: 7em;
+}
+.header {
+  height: 100%;
+  position: relative;
+  padding: 9em 0;
+}
+@media (max-width: 580px) {
+  .header {
+    padding-top: 5em;
+  }
 }
 .logo {
   background: url("../img/logo.png") no-repeat;
@@ -248,18 +260,18 @@ main {
   background-size: 100% 100%;
   width: 13em;
   height: 13em;
-  margin: 4em auto;
+  margin: 0 auto;
   text-indent: -9999px;
 }
 @media (max-width: 580px) {
   .logo {
-    width: 8em;
-    height: 8em;
-    margin: 2em auto;
+    width: 10em;
+    height: 10em;
   }
 }
 .description {
   text-align: center;
+  padding-top: 4em;
 }
 .description-item {
   display: inline-block;
@@ -287,17 +299,23 @@ main {
     display: none;
   }
 }
-.buy-ticket-area,
-.view-past-area {
+.buy-ticket-area {
   text-align: center;
-  padding: 3em 0;
+  padding: 3em 0 18em;
+  position: relative;
+}
+@media (max-width: 580px) {
+  .buy-ticket-area {
+    padding-bottom: 10em;
+    margin-bottom: 15em;
+  }
 }
 .buy-ticket {
   display: inline-block;
   padding: 0.6em 2em;
   -webkit-border-radius: 10em;
   border-radius: 10em;
-  background: #45ee78;
+  background: #58f086;
   color: #555;
   text-decoration: none;
   font-weight: 800;
@@ -305,7 +323,9 @@ main {
   text-transform: uppercase;
 }
 .buy-ticket:hover {
-  background: #34ec6c;
+  background: #69f292;
+  -webkit-box-shadow: 0 0 20px #404548;
+  box-shadow: 0 0 20px #404548;
 }
 .view-past-link {
   display: inline-block;
@@ -316,4 +336,154 @@ main {
 }
 .view-past-link:hover {
   border-bottom: 1px solid #aaa;
+}
+.sponsors-area {
+  margin-top: 8em;
+}
+.sponsors-title {
+  font-size: 2.4em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: table;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 0.1em;
+}
+.sponsors-title span {
+  background: #fff;
+  color: #69797e;
+  padding: 0.01em 0.5em 0.1em;
+}
+.sponsors-list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.sponsors-link {
+  text-decoration: none;
+}
+.sponsors-item {
+  display: inline-block;
+  margin: 3em 0 0;
+}
+.sponsors-item img {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+.sponsors-item img:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.support-title:after,
+.support-title:before {
+  width: 45%;
+}
+.arrow {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  margin-left: -20px;
+  width: 3.8em;
+  height: 3.8em;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  -ms-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@-moz-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@-ms-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
 }
