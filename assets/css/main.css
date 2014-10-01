@@ -273,6 +273,11 @@ main {
   text-align: center;
   padding-top: 4em;
 }
+@media (max-width: 580px) {
+  .description {
+    padding-top: 2em;
+  }
+}
 .description-item {
   display: inline-block;
   padding: 0.1em 0;
@@ -401,6 +406,11 @@ main {
   -o-animation: bounce 2s infinite;
   -ms-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+@media (max-width: 580px) {
+  .arrow {
+    display: none;
+  }
 }
 @-moz-keyframes bounce {
   0% {

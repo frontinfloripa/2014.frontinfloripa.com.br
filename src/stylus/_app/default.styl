@@ -56,6 +56,8 @@ main
 .description
   text-align: center
   padding-top: 4em
+  @media phone
+    padding-top: 2em
 
 .description-item
   display: inline-block
@@ -166,6 +168,8 @@ main
   background-size: contain
   opacity: .5
   animation(bounce 2s infinite)
+  @media phone
+    display: none
 
 @keyframes bounce
   0%
