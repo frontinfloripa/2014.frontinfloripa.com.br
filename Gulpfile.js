@@ -2,6 +2,9 @@
 var gulp    = require('gulp'),
     connect = require('gulp-connect'),
     stylus  = require('gulp-stylus'),
+    ghpages = require('gh-pages'),
+    path    = require('path'),
+    args    = require('yargs').argv,
     plumber = require('gulp-plumber');
 
 var paths = {
@@ -33,6 +36,22 @@ gulp.task('stylus', function () {
         }))
         .pipe(gulp.dest('./assets/css'))
         .pipe(connect.reload());
+});
+
+// Deploy to 
+gulp.task('deploy', function () {
+
+    var version = null;
+
+    if (args.t != 'undefined') {
+        version = args.t;
+    }
+
+    ghpages.publish(path.join(__dirname, '/'), {
+        add:     true,
+        message: 'Deploy website',
+        tag: version
+    });
 });
 
 // Watch task
