@@ -43,7 +43,7 @@ gulp.task('deploy', function () {
 
     var version = null;
 
-    if (args.t != 'undefined') {
+    if (args.t != undefined) {
         version = args.t;
     }
 
