@@ -1,0 +1,71 @@
+{
+  "speakers": [
+    {
+      "name": "Almir Filho",
+      "website": "http://almirfilho.com",
+      "thumbnail": "almirfilho.jpg",
+      "bio": "Desenvolvedor Web na Globo.com e co-fundador do Loop Infinito, onde compartilha seu conhecimento, experiências e pensamentos sobre front-end. Possui graduação e mestrado em Ciência da Computação, é entusiasta e extremamente interessado pelo mundo da web e produtividade.",
+      "company": "Globo.com",
+      "company_url": "globo.com",
+      "twitter": "almirfilho-tw",
+      "linkedin": "almirfilho-ld",
+      "facebook": "almirface",
+      "github": "GithubLink"
+    },
+    {
+      "name": "Gabriel Zigolis",
+      "website": "http://almirfilho.com",
+      "thumbnail": "gabriel.jpg",
+      "bio": "Arquiteto Front-End nos e-commerces da Arezzo (Schutz, Arezzo, Anacapri), core-committer no PopcornTime, um dos criadores do projeto Open Source blogMV*, autor na Front-End Magazine e um dos organizadores do Floripa Devs Meetup.",
+      "company": "Globo.com",
+      "company_url": "globo.com",
+      "twitter": "almirfilho-tw",
+      "linkedin": "almirfilho-ld",
+      "facebook": "almirface"
+    },
+    {
+      "name": "Fernando Daciuk",
+      "website": "http://almirfilho.com",
+      "thumbnail": "almirfilho.jpg",
+      "bio": "Desenvolvedor Web na Globo.com e co-fundador do Loop Infinito, onde compartilha seu conhecimento, experiências e pensamentos sobre front-end.",
+      "company": "Globo.com",
+      "company_url": "globo.com",
+      "twitter": "almirfilho-tw",
+      "linkedin": "almirfilho-ld",
+      "facebook": "almirface"
+    },
+    {
+      "name": "Almir Filho",
+      "website": "http://almirfilho.com",
+      "thumbnail": "almirfilho.jpg",
+      "bio": "Desenvolvedor Web na Globo.com e co-fundador do Loop Infinito, onde compartilha seu conhecimento, experiências e pensamentos sobre front-end.",
+      "company": "Globo.com",
+      "company_url": "globo.com",
+      "twitter": "almirfilho-tw",
+      "linkedin": "almirfilho-ld",
+      "facebook": "almirface"
+    },
+    {
+      "name": "Diogo Moretti",
+      "website": "http://almirfilho.com",
+      "thumbnail": "almirfilho.jpg",
+      "bio": "Desenvolvedor Web na Globo.com e co-fundador do Loop Infinito, onde compartilha seu conhecimento, experiências e pensamentos sobre front-end.",
+      "company": "Globo.com",
+      "company_url": "globo.com",
+      "twitter": "almirfilho-tw",
+      "linkedin": "almirfilho-ld",
+      "facebook": "almirface"
+    },
+    {
+      "name": "Fernando Daciuk",
+      "website": "http://almirfilho.com",
+      "thumbnail": "almirfilho.jpg",
+      "bio": "Desenvolvedor Web na Globo.com e co-fundador do Loop Infinito, onde compartilha seu conhecimento, experiências e pensamentos sobre front-end.",
+      "company": "Globo.com",
+      "company_url": "globo.com",
+      "twitter": "almirfilho-tw",
+      "linkedin": "almirfilho-ld",
+      "facebook": "almirface"
+    }
+  ]
+}

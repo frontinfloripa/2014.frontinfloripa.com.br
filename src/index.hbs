@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Front in Floripa</title>
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Front in Floripa 2014</h1>
+        <span class="description">
+            <span class="description-item">
+                <span class="description-value">21/Nov</span>
+                <span class="description-divisor">&bull;</span>
+                <span class="description-value">Senai/CTAI</span>
+                <span class="description-divisor">&bull;</span>
+                <span class="description-value location">Floripa/SC</span>
+            </span>
+        </span>
+        <div class="buy-ticket-area">
+            <a href="http://www.eventick.com.br/frontinfloripa2014" class="buy-ticket-header" target="_blank">Inscreva-se</a>
+        </div>
+        <div class="arrow"></div>
+    </header>
+    <nav class="main-menu">
+        <div class="container">
+            <ul class="main-menu-list">
+                <li class="main-menu-logo"></li>
+                <li class="main-menu-item">
+                    <a href="#" class="main-menu-link">Palestrantes</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#" class="main-menu-link">Local</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#" class="main-menu-link">Programação</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#" class="main-menu-link">Ingressos</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#" class="main-menu-link">Patrocínio</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#" class="main-menu-link">Apoio</a>
+                </li>
+                <li class="main-menu-item main-menu-buy">
+                    <a href="#" class="main-menu-link-buy">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="speakers">
+        <div class="container">
+            <h2>Palestrantes</h2>
+            <ul class="speakers-list">
+            {{ _.forEach(speakers, function(item) { }}
+                <li class="speaker-item">
+                    <div class="speaker-item-photo">
+                        <img src="assets/img/speakers/{{= item.thumbnail }}" />
+                    </div>
+                    <h3 class="speaker-item-title">{{= item.name }}</h3>
+                    <div class="social-network">
+                        <a href="{{= item.github }}" class="social-link icon-github-circled"></a>
+                        <a href="{{= item.facebook }}" class="social-link icon-facebook-circled"></a>
+                        <a href="{{= item.twitter }}" class="social-link icon-twitter-circled"></a>
+                    </div>
+                </li>
+            {{ }); }}
+            </ul>
+        </div>
+    </section>
+    <section class="location">
+        <div class="location-info">
+            <h3 class="location-info-title">Faculdade Senai</h3>
+            <p class="location-info-description">
+                Rodovia SC-401, 3730<br />
+                Saco Grande - Florianópolis - SC<br />
+                (Próximo ao Floripa Shopping)
+            </p>
+        </div>
+        <div id="map"></div>
+    </section>
+    <section class="tickets">
+        <h2 class="inverse">Tickets</h2>
+        <div class="container">
+            <div class="plan-item">
+                <h4 class="plan-title">1º Lote</h4>
+                <p class="plan-feature">01 (um) Ingresso</p>
+                <p class="plan-price">R$ 60,00</p>
+                <div class="plan-buy-box">
+                    <a href="#" class="buy-ticket-plan">Inscrever-se</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors">
+        <h2>Patrocinadores</h2>
+        <ul class="sponsors-list">
+            <li class="sponsors-item">
+                <a href="http://www.w3c.br" class="sponsors-link" target="_blank">
+                    <img src="assets/img/sponsors/w3c.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://cgi.br" class="sponsors-link" class="sponsors-link" target="_blank">
+                    <img src="assets/img/sponsors/cgibr.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://www.nic.br" class="sponsors-link" class="sponsors-link" target="_blank">
+                    <img src="assets/img/sponsors/nicbr.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://www.nextt.com.br" class="sponsors-link" class="sponsors-link" target="_blank">
+                    <img src="assets/img/sponsors/nextt.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://www.inteligenciaweb.com.br" class="sponsors-link" class="sponsors-link" target="_blank">
+                    <img src="assets/img/sponsors/iw.png" />
+                </a>
+            </li>
+        </ul>
+
+        <h2>Apoio</h2>
+        <ul class="sponsors-list">
+            <li class="sponsors-item">
+                <a href="http://www.sc.senai.br" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/senai.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://braziljs.org" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/braziljs.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://novatec.com.br" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/novatec.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="https://www.acate.com.br" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/acate.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://www.phpsc.com.br" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/phpsc.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://floripajs.org" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/floripajs.png" />
+                </a>
+            </li>
+            <li class="sponsors-item">
+                <a href="http://codeway.com.br" class="sponsors-link" target="_blank">
+                    <img src="assets/img/support/codeway.png" />
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
