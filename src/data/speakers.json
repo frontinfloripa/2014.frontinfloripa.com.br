@@ -31,15 +31,15 @@
       "company_url": "nextt.com.br",
       "twitter": "filipiz",
       "facebook": "filipiz",
-      "github": "almirfilho"
+      "github": "none"
     },
     {
       "name": "João Marcelo",
-      "website": "http://joaomarcelo.com",
+      "website": "http://fb.com/joaomarcelofachinetto",
       "thumbnail": "joaomarcelo.jpg",
       "bio": "Microsoft Certified Professional C# com foco em arquitetura de aplicações web utilizando AngularJs com tecnologias ASP.Net, Python e MongoDB.",
-      "company": "Globo.com",
-      "company_url": "globo.com",
+      "company": "João Marcelo",
+      "company_url": "fb.com/joaomarcelofachinetto",
       "twitter": "JoaoMFach",
       "facebook": "joaomarcelofachinetto",
       "github": "expandit"

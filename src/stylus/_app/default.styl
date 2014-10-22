@@ -75,36 +75,37 @@ h2
   color: color-default
   line-height: 1
   margin: 0 0 1.6em 0
-  padding: 2.2em 0 0 0
+  padding: 2.4em 0 0 0
   font-weight: 300
   position: relative
+  
+  span
+    position: relative
 
-  &:before
-    color: color-default
-    font-size: 1.2em
-    font-family: 'fif-icons'
-    left: 47.3%
-    position: absolute
-    top: .5em
+    &:before
+      color: color-default
+      font-size: 1.2em
+      font-family: 'fif-icons'
+      left: 35%
+      position: absolute
+      top: -1.2em
 
-  &:after
-    content: ''
-    width: 1em
-    height: 0
-    border-color: color-default
-    position: absolute
-    left: 47%
-    bottom: -.4em
-    border-top: 1px solid #ddd
+    &:after
+      content: ''
+      width: 1em
+      height: 0
+      border-color: color-default
+      position: absolute
+      left: 35%
+      bottom: -.4em
+      border-top: 1px solid #ddd
 
   &.inverse
     color: #fff
-
-    &:after
-      left: 48.5%
-
-    &:before
-      color: #fff
+    
+    span
+      &:before
+        color: #fff
 
 /*
   Section: Logo and Description
@@ -223,7 +224,8 @@ section
 .main-menu-fixed
   position: fixed
   top: 0
-  width: 100%
+  left: 0
+  right: 0
   z-index: 9999
   box-shadow: 0 5px 20px rgba(#000, .2)
 
@@ -256,7 +258,6 @@ section
 
 .main-menu-item
   display: inline-block
-  margin-right: 2em
   padding: 0
   vertical-align: middle
 
@@ -267,9 +268,14 @@ section
   font-weight: 400
   text-transform: uppercase
   transition: none
+  padding: .3em .6em
+  border-radius: .3em
+
+  &.last-link
+    margin-right: 1.5em
 
   &:hover
-    border-bottom: 1px solid #ddd
+    background: darken(color-secondary, 10%)
 
 /*
   Section: Speakers
@@ -279,11 +285,12 @@ section
   padding-bottom: 3em
 
   h2
-    &:after
-      left: 48%
-    &:before
-      left: 48.5%
-      content: '\e80f'
+    span
+      &:after
+        left: 48%
+      &:before
+        left: 48.5%
+        content: '\e80f'
 
 .speakers-list
   list-style: none
@@ -427,18 +434,13 @@ section
 
   h2
     margin-bottom: .91em
-    &:before
-      content: '\e811'
-      left: 48%
-    &:after
-      left: 48%
-      border-top: 1px solid #fff
-
-    @media phone
+    span
       &:before
-        left: 41%
+        content: '\e811'
+        left: 40%
       &:after
-        left: 41%
+        left: 40%
+        border-top: 1px solid #fff
 
 .location-info
   position: absolute
@@ -473,6 +475,31 @@ section
     height: 40em
 
 /*
+  Section: Schedule
+*/
+
+.schedule
+  background: #fff
+
+  h2
+    margin-bottom: 1em
+    span
+      &:before
+        content: '\e824'
+        left: 42%
+      &:after
+        left: 42%
+
+.schedule-coming-soon
+  font-size: 2em
+  color: #aaa
+  text-align: center
+  width: 80%
+  margin: 0 auto
+  font-weight: 400
+  line-height: 1.8em
+
+/*
   Section: Tickets
 */
 
@@ -483,17 +510,13 @@ section
 
   h2
     margin-bottom: .7em
-
-    &:before
-      content: '\e805'
-      left: 48.3%
-
-    @media phone
+    
+    span
       &:before
         content: '\e805'
-        left: 42%
+        left: 33%
       &:after
-        left: 42%
+        left: 35%
 
 .plan-item
   text-align: center
@@ -529,43 +552,32 @@ section
 .sponsors
   background: url('../img/bg-footer.jpg') bottom center no-repeat #fbfbfb
 
-  h2
-    &:after
-      border-top: 1px solid rgba(color-default, .5) 
-
 .sponsors-header
-  &:after
-    left: 48.2%
-  &:before
-    content: '\e81b'
-    left: 48%
-
-  @media phone
+  span
     &:after
-      left: 45.2%
+      left: 40%
     &:before
       content: '\e81b'
-      left: 45%
+      left: 38.5%
 
 .support-header
-  &:after
-    left: 48.6%
-  &:before
-    content: '\e818'
-    left: 48.3%
-
-  @media phone
+  span
     &:after
-      left: 45%
+      left: 31%
     &:before
       content: '\e818'
-      left: 43.3%
+      left: 25%
 
 .sponsors-list
   margin: 0
   padding: 0 0 3em 0
   list-style: none
   text-align: center
+
+.support-list
+  .sponsors-item
+    margin: 1em
+    
 
 .sponsors-item
   display: inline-block

@@ -421,35 +421,35 @@ h2 {
   color: #69797e;
   line-height: 1;
   margin: 0 0 1.6em 0;
-  padding: 2.2em 0 0 0;
+  padding: 2.4em 0 0 0;
   font-weight: 300;
   position: relative;
 }
-h2:before {
+h2 span {
+  position: relative;
+}
+h2 span:before {
   color: #69797e;
   font-size: 1.2em;
   font-family: 'fif-icons';
-  left: 47.3%;
+  left: 35%;
   position: absolute;
-  top: 0.5em;
+  top: -1.2em;
 }
-h2:after {
+h2 span:after {
   content: '';
   width: 1em;
   height: 0;
   border-color: #69797e;
   position: absolute;
-  left: 47%;
+  left: 35%;
   bottom: -0.4em;
   border-top: 1px solid #ddd;
 }
 h2.inverse {
   color: #fff;
 }
-h2.inverse:after {
-  left: 48.5%;
-}
-h2.inverse:before {
+h2.inverse span:before {
   color: #fff;
 }
 section {
@@ -586,7 +586,8 @@ section {
 .main-menu-fixed {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 9999;
   -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
@@ -626,7 +627,6 @@ section {
 }
 .main-menu-item {
   display: inline-block;
-  margin-right: 2em;
   padding: 0;
   vertical-align: middle;
 }
@@ -641,18 +641,24 @@ section {
   -o-transition: none;
   -ms-transition: none;
   transition: none;
+  padding: 0.3em 0.6em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+.main-menu-link.last-link {
+  margin-right: 1.5em;
 }
 .main-menu-link:hover {
-  border-bottom: 1px solid #ddd;
+  background: #434c4f;
 }
 .speakers {
   background: #fff;
   padding-bottom: 3em;
 }
-.speakers h2:after {
+.speakers h2 span:after {
   left: 48%;
 }
-.speakers h2:before {
+.speakers h2 span:before {
   left: 48.5%;
   content: '\e80f';
 }
@@ -846,21 +852,13 @@ section {
 .location h2 {
   margin-bottom: 0.91em;
 }
-.location h2:before {
+.location h2 span:before {
   content: '\e811';
-  left: 48%;
+  left: 40%;
 }
-.location h2:after {
-  left: 48%;
+.location h2 span:after {
+  left: 40%;
   border-top: 1px solid #fff;
-}
-@media (max-width: 580px) {
-  .location h2:before {
-    left: 41%;
-  }
-  .location h2:after {
-    left: 41%;
-  }
 }
 .location-info {
   position: absolute;
@@ -911,6 +909,28 @@ section {
     height: 40em;
   }
 }
+.schedule {
+  background: #fff;
+}
+.schedule h2 {
+  margin-bottom: 1em;
+}
+.schedule h2 span:before {
+  content: '\e824';
+  left: 42%;
+}
+.schedule h2 span:after {
+  left: 42%;
+}
+.schedule-coming-soon {
+  font-size: 2em;
+  color: #aaa;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.8em;
+}
 .tickets {
   background: #4a5558;
   padding-bottom: 5em;
@@ -919,18 +939,12 @@ section {
 .tickets h2 {
   margin-bottom: 0.7em;
 }
-.tickets h2:before {
+.tickets h2 span:before {
   content: '\e805';
-  left: 48.3%;
+  left: 33%;
 }
-@media (max-width: 580px) {
-  .tickets h2:before {
-    content: '\e805';
-    left: 42%;
-  }
-  .tickets h2:after {
-    left: 42%;
-  }
+.tickets h2 span:after {
+  left: 35%;
 }
 .plan-item {
   text-align: center;
@@ -964,46 +978,28 @@ section {
 .sponsors {
   background: url("../img/bg-footer.jpg") bottom center no-repeat #fbfbfb;
 }
-.sponsors h2:after {
-  border-top: 1px solid rgba(105,121,126,0.5);
+.sponsors-header span:after {
+  left: 40%;
 }
-.sponsors-header:after {
-  left: 48.2%;
-}
-.sponsors-header:before {
+.sponsors-header span:before {
   content: '\e81b';
-  left: 48%;
+  left: 38.5%;
 }
-@media (max-width: 580px) {
-  .sponsors-header:after {
-    left: 45.2%;
-  }
-  .sponsors-header:before {
-    content: '\e81b';
-    left: 45%;
-  }
+.support-header span:after {
+  left: 31%;
 }
-.support-header:after {
-  left: 48.6%;
-}
-.support-header:before {
+.support-header span:before {
   content: '\e818';
-  left: 48.3%;
-}
-@media (max-width: 580px) {
-  .support-header:after {
-    left: 45%;
-  }
-  .support-header:before {
-    content: '\e818';
-    left: 43.3%;
-  }
+  left: 25%;
 }
 .sponsors-list {
   margin: 0;
   padding: 0 0 3em 0;
   list-style: none;
   text-align: center;
+}
+.support-list .sponsors-item {
+  margin: 1em;
 }
 .sponsors-item {
   display: inline-block;
