@@ -79,7 +79,7 @@ gulp.task('deploy', function () {
         version = args.t;
     }
 
-    ghpages.publish(path.join(__dirname, '/'), {
+    ghpages.publish(path.join(__dirname, '/dist/'), {
         add:     true,
         message: 'Deploy website',
         tag: version
