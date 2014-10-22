@@ -8,11 +8,14 @@ var gulp        = require('gulp'),
     args        = require('yargs').argv,
     template    = require('gulp-template'),
     rename      = require('gulp-rename'),
+    concat      = require('gulp-concat'),
     plumber     = require('gulp-plumber');
 
+// Define paths
 var paths = {
     styles: 'src/stylus/**/*',
-    hbs:    ['src/*.hbs', 'src/data/*.json']
+    hbs:    ['src/*.hbs', 'src/data/*.json'],
+    js:     'src/javascripts/**/*',
 };
 
 // Connect task
@@ -29,6 +32,7 @@ gulp.task('html', function () {
         .pipe(connect.reload());
 });
 
+// Generate static html from json
 gulp.task('template', function () {
 
     var speakersFile     = fs.readFileSync('./src/data/speakers.json');
@@ -56,7 +60,17 @@ gulp.task('stylus', function () {
         .pipe(connect.reload());
 });
 
-// Deploy to 
+// Concat JS
+gulp.task('scripts', function() {
+    gulp.src([
+            './src/javascripts/map.js', 
+            './src/javascripts/main.js'
+        ])
+        .pipe(concat('all.js', {newLine: ';'}))
+        .pipe(gulp.dest('./dist/assets/js/'))
+});
+
+// Deploy to gh-pages
 gulp.task('deploy', function () {
 
     var version = null;
@@ -76,6 +90,7 @@ gulp.task('deploy', function () {
 gulp.task('watch', function () {
     gulp.watch(paths.styles, ['stylus']);
     gulp.watch(paths.hbs,    ['template', 'html']);
+    gulp.watch(paths.js,     ['scripts']);
 });
 
 // Set 'gulp server' for development

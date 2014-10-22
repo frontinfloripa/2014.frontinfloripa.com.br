@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>Front in Floripa</title>
+    <title>Front in Floripa • Maior evento de front-end de Santa Catarina</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#69797e">
+    <meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="232977203524160">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://frontinfloripa.com.br">
+    <meta property="og:title" content="Front in Floripa">
+    <meta property="og:description" content="Maior evento front-end de Santa Catarina">
+    <meta property="og:image" content="http://frontinfloripa.com.br/assets/img/fb-share.png">
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
 
@@ -33,30 +63,30 @@
             <ul class="main-menu-list">
                 <li class="main-menu-logo"></li>
                 <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Palestrantes</a>
+                    <a href="#speakers" class="main-menu-link">Palestrantes</a>
                 </li>
                 <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Local</a>
+                    <a href="#location" class="main-menu-link">Local</a>
                 </li>
                 <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Programação</a>
+                    <a href="#schedule" class="main-menu-link">Programação</a>
                 </li>
                 <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Ingressos</a>
+                    <a href="#tickets" class="main-menu-link">Ingressos</a>
                 </li>
                 <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Patrocínio</a>
+                    <a href="#sponsors" class="main-menu-link">Patrocínio</a>
                 </li>
                 <li class="main-menu-item">
-                    <a href="#" class="main-menu-link">Apoio</a>
+                    <a href="#support" class="main-menu-link">Apoio</a>
                 </li>
                 <li class="main-menu-item main-menu-buy">
-                    <a href="#" class="main-menu-link-buy">Inscreva-se</a>
+                    <a href="#tickets" class="main-menu-link-buy">Inscreva-se</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="speakers">
+    <section class="speakers" id="speakers">
         <div class="container">
             <h2>Palestrantes</h2>
             <ul class="speakers-list">
@@ -66,113 +96,111 @@
                         <img src="assets/img/speakers/{{= item.thumbnail }}" />
                     </div>
                     <h3 class="speaker-item-title">{{= item.name }}</h3>
-                    <div class="social-network">
-                        <a href="{{= item.github }}" class="social-link icon-github-circled"></a>
-                        <a href="{{= item.facebook }}" class="social-link icon-facebook-circled"></a>
-                        <a href="{{= item.twitter }}" class="social-link icon-twitter-circled"></a>
+                    <div>
+                        <a target="_blank" href="http://{{= item.company_url }}" class="speaker-item-company">{{= item.company }}</a>
                     </div>
+                    <div class="social-network">
+                        {{ if (item.github != 'none') { }}
+                            <a target="_blank" href="https://github.com/{{= item.github }}" class="social-link icon-github-circled"></a>
+                        {{ } }}
+                        {{ if (item.facebook != 'none') { }}
+                            <a target="_blank" href="https://fb.com/{{= item.facebook }}" class="social-link icon-facebook-circled"></a>
+                        {{ } }}
+                        {{ if (item.twitter != 'none') { }}
+                            <a target="_blank" href="https://twitter.com/{{= item.twitter }}" class="social-link icon-twitter-circled"></a>
+                        {{ } }}
+                    </div>
+                    <p class="speaker-item-bio">{{= item.bio }}</p>
                 </li>
             {{ }); }}
             </ul>
         </div>
     </section>
-    <section class="location">
+    <section class="location" id="location">
         <div class="location-info">
-            <h3 class="location-info-title">Faculdade Senai</h3>
+            <h2 class="inverse">Senai - CTAI</h2>
             <p class="location-info-description">
                 Rodovia SC-401, 3730<br />
                 Saco Grande - Florianópolis - SC<br />
                 (Próximo ao Floripa Shopping)
             </p>
         </div>
-        <div id="map"></div>
+        <div id="map">
+        </div>
     </section>
-    <section class="tickets">
+    <section class="tickets" id="tickets">
         <h2 class="inverse">Tickets</h2>
-        <div class="container">
-            <div class="plan-item">
-                <h4 class="plan-title">1º Lote</h4>
-                <p class="plan-feature">01 (um) Ingresso</p>
-                <p class="plan-price">R$ 60,00</p>
-                <div class="plan-buy-box">
-                    <a href="#" class="buy-ticket-plan">Inscrever-se</a>
-                </div>
+        <div class="plan-item">
+            <h4 class="plan-lot">1º Lote</h4>
+            <p class="plan-price">R$ 60,00</p>
+            <div class="plan-buy-box">
+                <a href="#" class="buy-ticket-plan">Inscrever-se</a>
             </div>
         </div>
     </section>
-    <section class="sponsors">
-        <h2>Patrocinadores</h2>
-        <ul class="sponsors-list">
-            <li class="sponsors-item">
-                <a href="http://www.w3c.br" class="sponsors-link" target="_blank">
-                    <img src="assets/img/sponsors/w3c.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://cgi.br" class="sponsors-link" class="sponsors-link" target="_blank">
-                    <img src="assets/img/sponsors/cgibr.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://www.nic.br" class="sponsors-link" class="sponsors-link" target="_blank">
-                    <img src="assets/img/sponsors/nicbr.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://www.nextt.com.br" class="sponsors-link" class="sponsors-link" target="_blank">
-                    <img src="assets/img/sponsors/nextt.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://www.inteligenciaweb.com.br" class="sponsors-link" class="sponsors-link" target="_blank">
-                    <img src="assets/img/sponsors/iw.png" />
-                </a>
-            </li>
-        </ul>
+    <section class="sponsors" id="sponsors">
+        <h2 class="sponsors-header">Patrocínio</h2>
+        <div class="container">
+            <ul class="sponsors-list">
+                <li class="sponsors-item">
+                    <a href="http://www.w3c.br" class="sponsors-link w3c" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://cgi.br" class="sponsors-link cgi" class="sponsors-link" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://www.nic.br" class="sponsors-link nic" class="sponsors-link" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://www.nextt.com.br" class="sponsors-link nextt" class="sponsors-link" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://www.inteligenciaweb.com.br" class="sponsors-link iw" class="sponsors-link" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <span id="support"></span>
 
-        <h2>Apoio</h2>
-        <ul class="sponsors-list">
-            <li class="sponsors-item">
-                <a href="http://www.sc.senai.br" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/senai.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://braziljs.org" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/braziljs.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://novatec.com.br" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/novatec.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="https://www.acate.com.br" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/acate.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://www.phpsc.com.br" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/phpsc.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://floripajs.org" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/floripajs.png" />
-                </a>
-            </li>
-            <li class="sponsors-item">
-                <a href="http://codeway.com.br" class="sponsors-link" target="_blank">
-                    <img src="assets/img/support/codeway.png" />
-                </a>
-            </li>
-        </ul>
+        <h2 class="support-header">Apoio</h2>
+        <div class="container">
+            <ul class="sponsors-list">
+                <li class="sponsors-item">
+                    <a href="http://www.sc.senai.br" class="sponsors-link senai" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://braziljs.org" class="sponsors-link globo" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://novatec.com.br" class="sponsors-link braziljs" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="https://www.acate.com.br" class="sponsors-link novatec" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://www.phpsc.com.br" class="sponsors-link solisc" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://floripajs.org" class="sponsors-link acate" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://floripajs.org" class="sponsors-link gdsc" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://codeway.com.br" class="sponsors-link phpsc" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://floripajs.org" class="sponsors-link floripajs" target="_blank"></a>
+                </li>
+                <li class="sponsors-item">
+                    <a href="http://codeway.com.br" class="sponsors-link codeway" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
     </section>
     
     <!-- JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="//maps.google.com/maps/api/js?sensor=false&callback=loadGoogleMaps"></script>
+    <script src="assets/js/all.js"></script>
 </body>
 </html>
