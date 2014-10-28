@@ -278,6 +278,50 @@ section
     background: darken(color-secondary, 10%)
 
 /*
+  Section: Features
+*/
+
+.features
+  background: lighten(#eee, 50%)
+  padding-bottom: 8em
+
+  h2
+    padding-top: 1.8em
+    span
+      &:after
+        left: 46%
+      &:before
+        left: 46.5%
+        content: '\e804'
+
+.feature-item
+  column(6)
+  text-align: center
+  padding: 0 7em
+  min-height: 35em
+  
+.feature-title
+  font-size: 2em
+  display: block
+  color: darken(color-default, 5%)
+  font-weight: 800
+  text-transform: uppercase
+  margin-bottom: .6em
+
+  &:before
+    font-size: 5em
+    display: block
+    margin: 0 auto .2em
+    line-height: 1
+    color: lighten(color-default, 40%)
+    
+.feature-description
+  font-size: 1.4em
+  line-height: 1.6em
+  color: #999
+  margin: 0
+
+/*
   Section: Speakers
 */
 .speakers
@@ -287,9 +331,9 @@ section
   h2
     span
       &:after
-        left: 48%
+        left: 43%
       &:before
-        left: 48.5%
+        left: 43.5%
         content: '\e80f'
 
 .speakers-list
@@ -448,7 +492,6 @@ section
   width: 70%
   max-width: 95%
   top: 50%
-  //right: 0
   left: 50%
   transform: translateX(-50%) translateY(-50%)
   z-index: 1000
@@ -578,7 +621,6 @@ section
 .support-list
   .sponsors-item
     margin: 1em
-    
 
 .sponsors-item
   display: inline-block
@@ -668,6 +710,9 @@ section
 
   &.codeway
     background-image: url('../img/sponsors/codeway.png')
+
+  &.jointi
+    background-image: url('../img/sponsors/jointi.png')
 
 #support
   display: block

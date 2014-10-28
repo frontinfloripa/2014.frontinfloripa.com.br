@@ -342,6 +342,42 @@ table {
 .icon-clipboard:before {
   content: '\e824';
 }
+.icon-mail-alt:before {
+  content: '\e825';
+}
+.icon-users:before {
+  content: '\e826';
+}
+.icon-users-1:before {
+  content: '\e827';
+}
+.icon-group:before {
+  content: '\e828';
+}
+.icon-briefcase:before {
+  content: '\e829';
+}
+.icon-briefcase-1:before {
+  content: '\e82a';
+}
+.icon-network:before {
+  content: '\e82b';
+}
+.icon-comment:before {
+  content: '\e82c';
+}
+.icon-chat:before {
+  content: '\e82d';
+}
+.icon-book:before {
+  content: '\e82e';
+}
+.icon-gift:before {
+  content: '\e82f';
+}
+.icon-book-1:before {
+  content: '\e830';
+}
 .buy-ticket-header,
 .main-menu-link-buy,
 .buy-ticket-plan {
@@ -651,15 +687,63 @@ section {
 .main-menu-link:hover {
   background: #434c4f;
 }
+.features {
+  background: #f7f7f7;
+  padding-bottom: 8em;
+}
+.features h2 {
+  padding-top: 1.8em;
+}
+.features h2 span:after {
+  left: 46%;
+}
+.features h2 span:before {
+  left: 46.5%;
+  content: '\e804';
+}
+.feature-item {
+  display: inline;
+  float: left;
+  padding: 0 0;
+  width: 49.519230769230774%;
+  margin: 0 0.2403846153846154%;
+  margin-bottom: 0.3em;
+  *width: 52.37655248397436%;
+  *margin: 0 0.24025941506410256%;
+  text-align: center;
+  padding: 0 7em;
+  min-height: 35em;
+}
+.feature-title {
+  font-size: 2em;
+  display: block;
+  color: #647378;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+}
+.feature-title:before {
+  font-size: 5em;
+  display: block;
+  margin: 0 auto 0.2em;
+  line-height: 1;
+  color: #a4afb3;
+}
+.feature-description {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: #999;
+  margin: 0;
+}
 .speakers {
   background: #fff;
   padding-bottom: 3em;
 }
 .speakers h2 span:after {
-  left: 48%;
+  left: 43%;
 }
 .speakers h2 span:before {
-  left: 48.5%;
+  left: 43.5%;
   content: '\e80f';
 }
 .speakers-list {
@@ -1098,6 +1182,9 @@ section {
 }
 .sponsors-link.codeway {
   background-image: url("../img/sponsors/codeway.png");
+}
+.sponsors-link.jointi {
+  background-image: url("../img/sponsors/jointi.png");
 }
 #support {
   display: block;
