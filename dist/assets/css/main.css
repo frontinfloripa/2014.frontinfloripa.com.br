@@ -378,6 +378,27 @@ table {
 .icon-book-1:before {
   content: '\e830';
 }
+.icon-beer:before {
+  content: '\e831';
+}
+.icon-emo-beer:before {
+  content: '\e832';
+}
+.icon-w3c:before {
+  content: '\e833';
+}
+.icon-food:before {
+  content: '\e834';
+}
+.icon-food-1:before {
+  content: '\e835';
+}
+.icon-coffee:before {
+  content: '\e836';
+}
+.icon-tag:before {
+  content: '\e837';
+}
 .buy-ticket-header,
 .main-menu-link-buy,
 .buy-ticket-plan {
@@ -635,7 +656,7 @@ section {
 }
 .main-menu-logo {
   display: inline-block;
-  margin-right: 4em;
+  margin-right: 3em;
   padding: 0;
   background: url("../img/logo.png") center center no-repeat;
   width: 15em;
@@ -669,7 +690,7 @@ section {
 .main-menu-link {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: none;
@@ -712,7 +733,29 @@ section {
   *margin: 0 0.24025941506410256%;
   text-align: center;
   padding: 0 7em;
-  min-height: 35em;
+  min-height: 34em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.feature-item:hover {
+  background: #fff;
+}
+@media (max-width: 580px) {
+  .feature-item {
+    display: inline;
+    float: left;
+    padding: 0 0;
+    width: 99.51923076923077%;
+    margin: 0 0.2403846153846154%;
+    margin-bottom: 0.3em;
+    *width: 105.23362379807693%;
+    *margin: 0 0.24025941506410256%;
+  }
 }
 .feature-title {
   font-size: 2em;
@@ -798,8 +841,8 @@ section {
   width: 16em;
   height: 16em;
   margin: 0 auto;
-  -webkit-border-radius: 3em;
-  border-radius: 3em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   overflow: hidden;
   text-align: center;
   border: 10px solid rgba(105,121,126,0);
@@ -1015,6 +1058,98 @@ section {
   margin: 0 auto;
   font-weight: 400;
   line-height: 1.8em;
+}
+.schedule-list {
+  padding: 1em 0;
+  margin: 3em 16em;
+  list-style: none;
+  border-left: 3px dotted #ddd;
+}
+@media (max-width: 580px) {
+  .schedule-list {
+    margin: 3em 0 3em 4em;
+  }
+}
+.schedule-item {
+  position: relative;
+  padding: 0.1em 0 0 5em;
+  margin-bottom: 5em;
+  min-height: 7em;
+}
+.schedule-item.other .schedule-item-type {
+  background: #a4afb3;
+}
+.schedule-item:hover .schedule-item-type {
+  -webkit-box-shadow: 0 0 20px 5px rgba(148,162,166,0.5);
+  box-shadow: 0 0 20px 5px rgba(148,162,166,0.5);
+}
+.schedule-item-type {
+  position: absolute;
+  left: -3.4em;
+  top: 0.4em;
+  background: #69797e;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 1em;
+  text-align: center;
+}
+.schedule-item-type span {
+  color: #fff;
+  font-size: 3em;
+  margin: 0;
+}
+.schedule-item-hour {
+  position: absolute;
+  left: -5.8em;
+  top: 0.6em;
+  text-align: right;
+  font-size: 3em;
+  font-weight: 800;
+  color: #69797e;
+  margin: 0;
+  line-height: 1;
+  width: 4em;
+}
+@media (max-width: 580px) {
+  .schedule-item-hour {
+    position: static;
+    display: inline-block;
+    text-align: left;
+    margin-top: 0.5em;
+  }
+}
+.schedule-item-box {
+  display: block;
+}
+.schedule-item-title {
+  font-size: 2.4em;
+  line-height: 1;
+  margin: 0.84em 0 0;
+  font-weight: normal;
+  color: #4a5558;
+}
+@media (max-width: 580px) {
+  .schedule-item-title {
+    margin-top: 0.3em;
+    line-height: 1.4em;
+  }
+}
+.schedule-item-speaker {
+  line-height: 1;
+  font-size: 1.5em;
+  margin: 0.7em 0 0 0.1em;
+  color: #27ae60;
+  text-transform: uppercase;
+}
+.schedule-item-description {
+  color: #888;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  margin: 0.5em 0 0 0.25em;
+  width: 90%;
+}
+.organizers {
+  background: #f7f7f7;
 }
 .tickets {
   background: #4a5558;

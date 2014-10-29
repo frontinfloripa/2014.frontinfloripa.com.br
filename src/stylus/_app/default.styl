@@ -235,7 +235,7 @@ section
 
 .main-menu-logo
   display: inline-block
-  margin-right: 4em
+  margin-right: 3em
   padding: 0
   background: url('../img/logo.png') center center no-repeat
   width: 15em
@@ -264,7 +264,7 @@ section
 .main-menu-link
   text-decoration: none
   color: #fff
-  font-size: 1.6em
+  font-size: 1.5em
   font-weight: 400
   text-transform: uppercase
   transition: none
@@ -298,7 +298,15 @@ section
   column(6)
   text-align: center
   padding: 0 7em
-  min-height: 35em
+  min-height: 34em
+  border-radius: 1em
+  transition: background 1s ease
+  
+  &:hover
+    background: #fff
+    
+  @media phone
+    column(12)
   
 .feature-title
   font-size: 2em
@@ -361,7 +369,7 @@ section
   width: 16em
   height: @width
   margin: 0 auto
-  border-radius: 3em
+  border-radius: 50%
   overflow: hidden
   text-align: center
   border: 10px solid rgba(color-default, .0)
@@ -542,6 +550,94 @@ section
   margin: 0 auto
   font-weight: 400
   line-height: 1.8em
+  
+.schedule-list
+  padding: 1em 0
+  margin: 3em 16em
+  list-style: none
+  border-left: 3px dotted #ddd
+  @media phone
+    margin: 3em 0 3em 4em
+  
+.schedule-item
+  position: relative
+  padding: .1em 0 0 5em
+  margin-bottom: 5em
+  min-height: 7em
+  
+  &.other
+    .schedule-item-type
+      background: lighten(color-default, 40%)
+  
+  &:hover
+    .schedule-item-type
+      box-shadow: 0 0 20px 5px rgba(lighten(color-default, 30%), .5)
+
+  
+.schedule-item-type
+  position: absolute
+  left: -3.4em
+  top: .4em
+  background: color-default
+  border-radius: 50%
+  padding: 1em
+  text-align: center
+  
+  span
+    color: #fff
+    font-size: 3em
+    margin: 0
+  
+.schedule-item-hour
+  position: absolute
+  left: -5.8em
+  top: .6em
+  text-align: right
+  font-size: 3em
+  font-weight: 800
+  color: color-default
+  margin: 0
+  line-height: 1
+  width: 4em
+  @media phone
+    position: static
+    display: inline-block
+    text-align: left
+    margin-top: .5em
+  
+.schedule-item-box
+  display: block
+  
+.schedule-item-title
+  font-size: 2.4em
+  line-height: 1
+  margin: .84em 0 0
+  font-weight: normal
+  color: color-secondary
+  @media phone
+    margin-top: .3em
+    line-height: 1.4em
+  
+.schedule-item-speaker
+  line-height: 1
+  font-size: 1.5em
+  margin: .7em 0 0 .1em
+  color: color-buy
+  text-transform: uppercase
+  
+.schedule-item-description
+  color: #888
+  font-size: 1.3em
+  line-height: 1.8em
+  margin: .5em 0 0 .25em
+  width: 90%
+  
+/*
+  Section: Organizers
+*/
+
+.organizers
+  background: lighten(#eee, 50%)
 
 /*
   Section: Tickets
