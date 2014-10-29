@@ -12,6 +12,17 @@
       "github": "almirfilho"
     },
     {
+      "name": "Felipe Nascimento",
+      "website": "http://felipenmoura.org",
+      "thumbnail": "felipemoura.jpg",
+      "bio": "Entusiasta JavaScript, apaixonado por desenvolvimento Web e linguagens de programação, atua como Analista de Desenvolvimento Sênior no Terra. Organizador e co-fundador da BrazilJS Conference e BrazilJS Foundation, além do RSJS.",
+      "company": "Terra Networks",
+      "company_url": "terra.com.br",
+      "twitter": "felipenmoura",
+      "facebook": "felipenmoura",
+      "github": "felipenmoura"
+    },
+    {
       "name": "Gabriel Zigolis",
       "website": "http://zigolis.com",
       "thumbnail": "gabriel.jpg",
@@ -38,8 +49,8 @@
       "website": "http://fb.com/joaomarcelofachinetto",
       "thumbnail": "joaomarcelo.jpg",
       "bio": "Microsoft Certified Professional C# com foco em arquitetura de aplicações web utilizando AngularJs com tecnologias ASP.Net, Python e MongoDB.",
-      "company": "João Marcelo",
-      "company_url": "fb.com/joaomarcelofachinetto",
+      "company": "Westsoft",
+      "company_url": "www.westsoft.com.br/2013/default.aspx",
       "twitter": "JoaoMFach",
       "facebook": "joaomarcelofachinetto",
       "github": "expandit"

@@ -522,7 +522,7 @@ section {
 .header {
   height: 100%;
   position: relative;
-  padding: 9em 0;
+  padding: 7em 0 9em;
   background: rgba(64,69,72,0.6);
   text-align: center;
 }
@@ -537,15 +537,15 @@ section {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 14em;
-  height: 14em;
+  width: 16em;
+  height: 16em;
   margin: 0 auto;
   text-indent: -9999px;
 }
 @media (max-width: 580px) {
   .logo {
-    width: 7em;
-    height: 7em;
+    width: 11em;
+    height: 11em;
   }
 }
 .description {
@@ -1050,14 +1050,20 @@ section {
 .schedule h2 span:after {
   left: 42%;
 }
-.schedule-coming-soon {
-  font-size: 2em;
-  color: #aaa;
+.schedule-alert {
+  font-size: 1.4em;
+  color: #ccc;
+  width: 72%;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
   font-weight: 400;
   line-height: 1.8em;
+  font-style: italic;
+}
+@media (max-width: 580px) {
+  .schedule-alert {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .schedule-list {
   padding: 1em 0;
@@ -1195,6 +1201,13 @@ section {
     font-size: 2em;
   }
 }
+.tickets-more {
+  font-size: 1.6em;
+  color: #eee;
+  margin: 1em;
+  line-height: 1.8em;
+  color: #94a2a6;
+}
 .sponsors {
   background: url("../img/bg-footer.jpg") bottom center no-repeat #fbfbfb;
 }
@@ -1308,6 +1321,9 @@ section {
 }
 .sponsors-link.gdsc {
   background-image: url("../img/sponsors/gdsc.png");
+}
+.sponsors-link.emailmanager {
+  background-image: url("../img/sponsors/emailmanager.png");
 }
 .sponsors-link.phpsc {
   background-image: url("../img/sponsors/phpsc.png");
