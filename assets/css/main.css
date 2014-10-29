@@ -342,6 +342,63 @@ table {
 .icon-clipboard:before {
   content: '\e824';
 }
+.icon-mail-alt:before {
+  content: '\e825';
+}
+.icon-users:before {
+  content: '\e826';
+}
+.icon-users-1:before {
+  content: '\e827';
+}
+.icon-group:before {
+  content: '\e828';
+}
+.icon-briefcase:before {
+  content: '\e829';
+}
+.icon-briefcase-1:before {
+  content: '\e82a';
+}
+.icon-network:before {
+  content: '\e82b';
+}
+.icon-comment:before {
+  content: '\e82c';
+}
+.icon-chat:before {
+  content: '\e82d';
+}
+.icon-book:before {
+  content: '\e82e';
+}
+.icon-gift:before {
+  content: '\e82f';
+}
+.icon-book-1:before {
+  content: '\e830';
+}
+.icon-beer:before {
+  content: '\e831';
+}
+.icon-emo-beer:before {
+  content: '\e832';
+}
+.icon-w3c:before {
+  content: '\e833';
+}
+.icon-food:before {
+  content: '\e834';
+}
+.icon-food-1:before {
+  content: '\e835';
+}
+.icon-coffee:before {
+  content: '\e836';
+}
+.icon-tag:before {
+  content: '\e837';
+}
 .buy-ticket-header,
 .main-menu-link-buy,
 .buy-ticket-plan {
@@ -465,7 +522,7 @@ section {
 .header {
   height: 100%;
   position: relative;
-  padding: 9em 0;
+  padding: 7em 0 9em;
   background: rgba(64,69,72,0.6);
   text-align: center;
 }
@@ -480,15 +537,15 @@ section {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
-  width: 14em;
-  height: 14em;
+  width: 16em;
+  height: 16em;
   margin: 0 auto;
   text-indent: -9999px;
 }
 @media (max-width: 580px) {
   .logo {
-    width: 7em;
-    height: 7em;
+    width: 11em;
+    height: 11em;
   }
 }
 .description {
@@ -599,7 +656,7 @@ section {
 }
 .main-menu-logo {
   display: inline-block;
-  margin-right: 4em;
+  margin-right: 3em;
   padding: 0;
   background: url("../img/logo.png") center center no-repeat;
   width: 15em;
@@ -633,7 +690,7 @@ section {
 .main-menu-link {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: none;
@@ -651,15 +708,85 @@ section {
 .main-menu-link:hover {
   background: #434c4f;
 }
+.features {
+  background: #f7f7f7;
+  padding-bottom: 8em;
+}
+.features h2 {
+  padding-top: 1.8em;
+}
+.features h2 span:after {
+  left: 46%;
+}
+.features h2 span:before {
+  left: 46.5%;
+  content: '\e804';
+}
+.feature-item {
+  display: inline;
+  float: left;
+  padding: 0 0;
+  width: 49.519230769230774%;
+  margin: 0 0.2403846153846154%;
+  margin-bottom: 0.3em;
+  *width: 52.37655248397436%;
+  *margin: 0 0.24025941506410256%;
+  text-align: center;
+  padding: 0 7em;
+  min-height: 34em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.feature-item:hover {
+  background: #fff;
+}
+@media (max-width: 580px) {
+  .feature-item {
+    display: inline;
+    float: left;
+    padding: 0 0;
+    width: 99.51923076923077%;
+    margin: 0 0.2403846153846154%;
+    margin-bottom: 0.3em;
+    *width: 105.23362379807693%;
+    *margin: 0 0.24025941506410256%;
+  }
+}
+.feature-title {
+  font-size: 2em;
+  display: block;
+  color: #647378;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+}
+.feature-title:before {
+  font-size: 5em;
+  display: block;
+  margin: 0 auto 0.2em;
+  line-height: 1;
+  color: #a4afb3;
+}
+.feature-description {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: #999;
+  margin: 0;
+}
 .speakers {
   background: #fff;
   padding-bottom: 3em;
 }
 .speakers h2 span:after {
-  left: 48%;
+  left: 43%;
 }
 .speakers h2 span:before {
-  left: 48.5%;
+  left: 43.5%;
   content: '\e80f';
 }
 .speakers-list {
@@ -714,8 +841,8 @@ section {
   width: 16em;
   height: 16em;
   margin: 0 auto;
-  -webkit-border-radius: 3em;
-  border-radius: 3em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   overflow: hidden;
   text-align: center;
   border: 10px solid rgba(105,121,126,0);
@@ -923,14 +1050,112 @@ section {
 .schedule h2 span:after {
   left: 42%;
 }
-.schedule-coming-soon {
-  font-size: 2em;
-  color: #aaa;
+.schedule-alert {
+  font-size: 1.4em;
+  color: #ccc;
+  width: 72%;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
   font-weight: 400;
   line-height: 1.8em;
+  font-style: italic;
+}
+@media (max-width: 580px) {
+  .schedule-alert {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.schedule-list {
+  padding: 1em 0;
+  margin: 3em 16em;
+  list-style: none;
+  border-left: 3px dotted #ddd;
+}
+@media (max-width: 580px) {
+  .schedule-list {
+    margin: 3em 0 3em 4em;
+  }
+}
+.schedule-item {
+  position: relative;
+  padding: 0.1em 0 0 5em;
+  margin-bottom: 5em;
+  min-height: 7em;
+}
+.schedule-item.other .schedule-item-type {
+  background: #a4afb3;
+}
+.schedule-item:hover .schedule-item-type {
+  -webkit-box-shadow: 0 0 20px 5px rgba(148,162,166,0.5);
+  box-shadow: 0 0 20px 5px rgba(148,162,166,0.5);
+}
+.schedule-item-type {
+  position: absolute;
+  left: -3.4em;
+  top: 0.4em;
+  background: #69797e;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 1em;
+  text-align: center;
+}
+.schedule-item-type span {
+  color: #fff;
+  font-size: 3em;
+  margin: 0;
+}
+.schedule-item-hour {
+  position: absolute;
+  left: -5.8em;
+  top: 0.6em;
+  text-align: right;
+  font-size: 3em;
+  font-weight: 800;
+  color: #69797e;
+  margin: 0;
+  line-height: 1;
+  width: 4em;
+}
+@media (max-width: 580px) {
+  .schedule-item-hour {
+    position: static;
+    display: inline-block;
+    text-align: left;
+    margin-top: 0.5em;
+  }
+}
+.schedule-item-box {
+  display: block;
+}
+.schedule-item-title {
+  font-size: 2.4em;
+  line-height: 1;
+  margin: 0.84em 0 0;
+  font-weight: normal;
+  color: #4a5558;
+}
+@media (max-width: 580px) {
+  .schedule-item-title {
+    margin-top: 0.3em;
+    line-height: 1.4em;
+  }
+}
+.schedule-item-speaker {
+  line-height: 1;
+  font-size: 1.5em;
+  margin: 0.7em 0 0 0.1em;
+  color: #27ae60;
+  text-transform: uppercase;
+}
+.schedule-item-description {
+  color: #888;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  margin: 0.5em 0 0 0.25em;
+  width: 90%;
+}
+.organizers {
+  background: #f7f7f7;
 }
 .tickets {
   background: #4a5558;
@@ -975,6 +1200,13 @@ section {
   .buy-ticket-plan {
     font-size: 2em;
   }
+}
+.tickets-more {
+  font-size: 1.6em;
+  color: #eee;
+  margin: 1em;
+  line-height: 1.8em;
+  color: #94a2a6;
 }
 .sponsors {
   background: url("../img/bg-footer.jpg") bottom center no-repeat #fbfbfb;
@@ -1090,6 +1322,9 @@ section {
 .sponsors-link.gdsc {
   background-image: url("../img/sponsors/gdsc.png");
 }
+.sponsors-link.emailmanager {
+  background-image: url("../img/sponsors/emailmanager.png");
+}
 .sponsors-link.phpsc {
   background-image: url("../img/sponsors/phpsc.png");
 }
@@ -1098,6 +1333,9 @@ section {
 }
 .sponsors-link.codeway {
   background-image: url("../img/sponsors/codeway.png");
+}
+.sponsors-link.jointi {
+  background-image: url("../img/sponsors/jointi.png");
 }
 #support {
   display: block;
