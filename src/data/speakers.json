@@ -54,6 +54,17 @@
       "twitter": "JoaoMFach",
       "facebook": "joaomarcelofachinetto",
       "github": "expandit"
+    },
+    {
+      "name": "Pedro Nauck",
+      "website": "http://pedronauck.com",
+      "thumbnail": "pedronauck.jpg",
+      "bio": "Desenvolvedor Web desde os 12 anos de idade, já se aventurou por diversas áreas dentro do desenvolvimento web. Ao longo dos últimos anos se dedica exclusivamente à estudar Javascript e suas peculiaridades. Fundador e Programador na GoNorth, um dos co-founders do @CerebroBR :)",
+      "company": "GoNorth",
+      "company_url": "www.gonorth.com.br",
+      "twitter": "pedronauck",
+      "facebook": "pedronauck",
+      "github": "pedronauck"
     }
   ]
 }
