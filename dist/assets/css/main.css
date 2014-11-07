@@ -1337,6 +1337,9 @@ section {
 .sponsors-link.jointi {
   background-image: url("../img/sponsors/jointi.png");
 }
+.sponsors-link.treinaweb {
+  background-image: url("../img/sponsors/treina-web.png");
+}
 #support {
   display: block;
   margin-bottom: 6em;

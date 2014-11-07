@@ -65,6 +65,28 @@
       "twitter": "pedronauck",
       "facebook": "pedronauck",
       "github": "pedronauck"
+    },
+    {
+      "name": "Renato Vasconcellos",
+      "website": "http://taller.net.br",
+      "thumbnail": "renato.jpg",
+      "bio": "Publicitário e técnico em Informática da Taller. Drupaleiro de carterinha, vegetariano e anarquista que adora Software Livre.",
+      "company": "Taller",
+      "company_url": "taller.net.br",
+      "twitter": "revagomes",
+      "facebook": "none",
+      "github": "revagomes"
+    },
+    {
+      "name": "Guilherme Oderdenge",
+      "website": "http://oderdenge.com",
+      "thumbnail": "guilherme.jpg",
+      "bio": "É desenvolvedor web focado em front-end: desde o desenho da interface até o JavaScript. Suas principais habilidades são o Photoshop e o Backbone.js, usando Jasmine para testes e, quando necessário, Node e Rails para o back-end. Trabalha profissionalmente na área há aproximadamente 6 anos.",
+      "company": "Oderdenge",
+      "company_url": "oderdenge.com",
+      "twitter": "chiefgui",
+      "facebook": "guioderdenge",
+      "github": "chiefGui"
     }
   ]
 }
