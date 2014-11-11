@@ -1340,6 +1340,9 @@ section {
 .sponsors-link.treinaweb {
   background-image: url("../img/sponsors/treina-web.png");
 }
+.sponsors-link.resultados-digitais {
+  background-image: url("../img/sponsors/resultados-digitais.png");
+}
 #support {
   display: block;
   margin-bottom: 6em;

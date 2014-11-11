@@ -34,6 +34,17 @@
       "github": "zigolis"
     },
     {
+      "name": "Pedro Nauck",
+      "website": "http://pedronauck.com",
+      "thumbnail": "pedronauck.jpg",
+      "bio": "Desenvolvedor Web desde os 12 anos de idade, já se aventurou por diversas áreas dentro do desenvolvimento web. Ao longo dos últimos anos se dedica exclusivamente à estudar Javascript e suas peculiaridades. Fundador e Programador na GoNorth, um dos co-founders do @CerebroBR :)",
+      "company": "GoNorth",
+      "company_url": "www.gonorth.com.br",
+      "twitter": "pedronauck",
+      "facebook": "pedronauck",
+      "github": "pedronauck"
+    },
+    {
       "name": "Filipi Zimermann",
       "website": "http://nextt.com.br",
       "thumbnail": "filipi.jpg",
@@ -56,17 +67,6 @@
       "github": "expandit"
     },
     {
-      "name": "Pedro Nauck",
-      "website": "http://pedronauck.com",
-      "thumbnail": "pedronauck.jpg",
-      "bio": "Desenvolvedor Web desde os 12 anos de idade, já se aventurou por diversas áreas dentro do desenvolvimento web. Ao longo dos últimos anos se dedica exclusivamente à estudar Javascript e suas peculiaridades. Fundador e Programador na GoNorth, um dos co-founders do @CerebroBR :)",
-      "company": "GoNorth",
-      "company_url": "www.gonorth.com.br",
-      "twitter": "pedronauck",
-      "facebook": "pedronauck",
-      "github": "pedronauck"
-    },
-    {
       "name": "Renato Vasconcellos",
       "website": "http://taller.net.br",
       "thumbnail": "renato.jpg",
@@ -82,11 +82,22 @@
       "website": "http://oderdenge.com",
       "thumbnail": "guilherme.jpg",
       "bio": "É desenvolvedor web focado em front-end: desde o desenho da interface até o JavaScript. Suas principais habilidades são o Photoshop e o Backbone.js, usando Jasmine para testes e, quando necessário, Node e Rails para o back-end. Trabalha profissionalmente na área há aproximadamente 6 anos.",
-      "company": "Oderdenge",
-      "company_url": "oderdenge.com",
+      "company": "Chute",
+      "company_url": "www.getchute.com",
       "twitter": "chiefgui",
       "facebook": "guioderdenge",
       "github": "chiefGui"
+    },
+    {
+      "name": "André Júnior",
+      "website": "http://none.com",
+      "thumbnail": "andrejunior.jpg",
+      "bio": "Full Stack Developer na Resultados Digitais, desenhista, open source lover.",
+      "company": "Resultados Digitais",
+      "company_url": "www.resultadosdigitais.com.br",
+      "twitter": "andrehjr",
+      "facebook": "andrehjr",
+      "github": "andrehjr"
     }
   ]
 }
